@@ -17,5 +17,10 @@ class BrewRatioFactory {
             val water = coffee * ratio
             return BrewRatio(coffee, water, ratio)
         }
+
+        fun forCoffee(water: Double, ratio: Double): BrewRatio {
+            val coffee = water / ratio
+            return BrewRatio(coffee, water, ratio)
+        }
     }
 }
