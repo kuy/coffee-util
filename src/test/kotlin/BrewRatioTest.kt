@@ -10,4 +10,11 @@ class BrewRatioTest : FunSpec({
             actual.ratio shouldBeEqual 17.0
         }
     }
+
+    context("testing forWater") {
+        test("should return BrewRatio") {
+            val actual = BrewRatioFactory.forWater(14.0, 17.0)
+            actual.water shouldBeEqual 238.0
+        }
+    }
 })
